@@ -1,0 +1,123 @@
+/* Global Reset & Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #f0f8ff, #e0f7fa);
+  color: #333;
+}
+
+/* Weather App Main Container */
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #009688;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 150, 136, 0.2);
+}
+
+/* Weather Information Section */
+.weather-info {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.weather-info h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.weather-info:hover {
+  background-color: #f0f8ff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-top: 30px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#map:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #999;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .weather-app {
+    padding: 20px;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+
+  .weather-info h2 {
+    font-size: 2rem;
+  }
+
+  .map-container {
+    height: 350px;
+  }
+}

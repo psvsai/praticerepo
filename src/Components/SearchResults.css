@@ -1,0 +1,116 @@
+/* Search Results Container */
+/* Search Bar Styling */
+.search-bar {
+  width: 100%;
+  max-width: 600px; /* Increase max width */
+  padding: 20px; /* Increase padding for a larger search field */
+  font-size: 1.5rem; /* Increase font size */
+  border: 2px solid #42a5f5; /* Border for emphasis */
+  border-radius: 30px; /* Increase border radius for a smoother look */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #1e88e5; /* Change border color on focus */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Add more shadow on focus */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container .settings-btn {
+  margin-left: 20px; /* Space between the search bar and settings button */
+}
+
+.settings-btn {
+  padding: 20px 40px; /* Further increase padding */
+  font-size: 1.5rem; /* Further increase font size */
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #64b5f6, #42a5f5);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.settings-btn:hover {
+  background: linear-gradient(135deg, #1e88e5, #1976d2);
+  transform: scale(1.1); /* Make hover effect larger */
+}
+
+.search-results {
+  background-color: #ffffff;
+  border-radius: 20px; /* Increase border radius */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); /* Larger shadow */
+  margin-top: 15px;
+  width: 100%;
+  max-width: 600px; /* Increase max width for larger display */
+  overflow: hidden;
+}
+
+.search-result-item {
+  padding: 30px; /* Further increase padding for larger clickable area */
+  font-size: 1.5rem; /* Increase font size */
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.search-result-item:hover {
+  background-color: #e8f4ff; /* Lighten hover color */
+  padding-left: 30px; /* Further increase hover padding */
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+/* City Name Styling */
+.city-name {
+  font-size: 1.5rem; /* Increase city name size */
+  color: #333;
+  margin-left: 15px; /* Increase margin */
+  font-weight: 600; /* Increase font weight */
+  transition: color 0.3s ease;
+}
+
+.search-result-item:hover .city-name {
+  color: #1976d2; /* Change to a deeper blue */
+}
+
+/* Icon Styling */
+.result-icon {
+  font-size: 1.8rem; /* Increase icon size */
+  color: #1976d2; /* Change icon color */
+  transition: transform 0.3s ease;
+}
+
+.search-result-item:hover .result-icon {
+  transform: scale(1.3); /* Increase hover scaling effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .search-results {
+    max-width: 100%;
+  }
+
+  .search-result-item {
+    padding: 15px;
+  }
+
+  .city-name {
+    font-size: 1.2rem;
+  }
+
+  .result-icon {
+    font-size: 1.4rem;
+  }
+}

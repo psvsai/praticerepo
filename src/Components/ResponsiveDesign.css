@@ -1,0 +1,11 @@
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .search-results {
+      max-width: 95%;
+    }
+  
+    .search-result-item {
+      font-size: 0.9rem;
+    }
+  }
